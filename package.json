@@ -3,14 +3,10 @@
   "license": "MIT",
   "version": "0.1.0",
   "private": true,
-  "lint": "prettier --check .",
-   "husky": {
+  "husky": {
   "hooks": {
-    "pre-commit": "lint-staged"
+    "pre-commit": "prettier --write . && git add -A ."
   }
-},
-"lint-staged": {
-  "*": "prettier --write"
 },
   "scripts": {
     "dev": "next dev",
