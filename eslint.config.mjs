@@ -14,7 +14,7 @@ export default defineConfig([
     plugins: { js },
     extends: ['js/recommended'],
     rules: {
-      'no-console': 'error',  
+      'no-console': 'error',
       'no-unused-vars': 'error',
     },
   },
